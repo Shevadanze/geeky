@@ -1,0 +1,123 @@
+<!DOCTYPE html>  <!-- We are using html5-->
+<html lang="en"> <!-- Language for screen readers and SEO -->
+<head>
+  <meta charset="utf-8" /> <!-- Character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsive scaling -->
+  <title>Maendeleo Development Initiative | Home</title> <!-- Title shown in browser tab and search results -->
+  <meta name="description" content="Learn about our community development initiative: goals, recent news, resources, and how to get involved. Accessible, well-structured, and SEO-friendly content." /> <!-- SEO meta description -->
+  <meta name="robots" content="index, follow" /> <!-- Instructs crawlers to index and follow links -->
+  <link rel="canonical" href="https://www.example.org/" /> <!-- Preferred URL to avoid duplicate-content issues, fictitious for the moment -->
+  <!-- Open Graph metadata helps when the page is shared on social platforms -->
+  <meta property="og:title" content="Maendeleo Development Initiative" />
+  <meta property="og:description" content="Explore our mission, updates, and resources to engage in sustainable community development." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.example.org/" /> <!--fictitious link for the moment-->
+  <meta property="og:locale" content="en_US" />
+</head>
+<body>
+  <!-- Skip link: improves keyboard navigation for screen-reader/keyboard users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner"> <!-- Site-wide header with branding and primary navigation -->
+    <h1>Maendeleo Development Initiative</h1> <!-- Main page title (important for SEO and structure) -->
+    <p class="tagline">Empowering local communities through sustainable programs and inclusive participation.</p> <!-- Short descriptive tagline -->
+    <nav aria-label="Primary navigation"> <!-- Navigation landmark with accessible label -->
+      <ul>
+        <li><a href="/" aria-current="page">Home</a></li> <!-- aria-current indicates current page -->
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/programs.html">Programs</a></li>
+        <li><a href="/resources.html">Resources</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main"> <!-- Primary content area; id referenced by skip link -->
+    <!-- Introduction / mission statement -->
+    <section aria-labelledby="intro-heading"> <!-- Section with accessible heading reference -->
+      <h2 id="intro-heading">Our Mission</h2> <!-- Secondary heading (h2) -->
+      <p>We collaborate with stakeholders to design and implement projects that improve education, health, and livelihoods in underserved areas. Accessibility, transparency, and sustainability are at the core of what we do.</p> <!-- Descriptive, keyword-rich intro content -->
+    </section>
+
+    <!-- Latest updates / news items -->
+    <section aria-labelledby="updates-heading">
+      <h2 id="updates-heading">Latest Updates</h2>
+      <!-- First news article -->
+      <article aria-labelledby="update1-title" datetime="2025-07-30"> <!-- Article element signals an independent piece of content -->
+        <h3 id="update1-title">New Educational Resource Center Launched</h3> <!-- Tertiary heading under updates -->
+        <p>On July 30, 2025, we inaugurated a community learning hub offering digital literacy training, mentorship, and study space for primary and secondary learners. The center is fully accessible and open to all residents.</p> <!-- Summary of the update -->
+        <p><a href="/news/educational-center.html">Read more about the launch</a></p> <!-- Descriptive link for deeper content -->
+      </article>
+
+      <!-- Second news article -->
+      <article aria-labelledby="update2-title" datetime="2025-06-15">
+        <h3 id="update2-title">Community Feedback Survey Results Published</h3>
+        <p>Results from the recent community engagement survey are now available. Insights are being used to refine program priorities and improve responsiveness to local needs.</p>
+        <p><a href="/reports/survey-results.html">View survey findings</a></p>
+      </article>
+    </section>
+
+    <!-- Explanation of methodology / how the initiative works -->
+    <section aria-labelledby="how-it-works-heading">
+      <h2 id="how-it-works-heading">How It Works</h2>
+      <p>Our approach is participatory, evidence-driven, and adaptive. Key pillars include:</p> <!-- Introductory text -->
+      <ul> <!-- List of core pillars; semantic list helps both accessibility and SEO -->
+        <li><strong>Assessment:</strong> Listening to community needs and collecting data.</li>
+        <li><strong>Co-design:</strong> Partnering with local leaders to develop interventions.</li>
+        <li><strong>Implementation:</strong> Deploying resources with clear roles and accountability.</li>
+        <li><strong>Learning:</strong> Evaluating impact and iterating based on feedback.</li>
+      </ul>
+    </section>
+
+    <!-- Supplementary sidebar content -->
+    <aside aria-label="Support and quick links"> <!-- Aside indicates related content -->
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="/get-involved.html">Volunteer</a></li>  <!-- the links are for practice purpose, not yet created -->
+        <li><a href="/donate.html">Donate</a></li>
+        <li><a href="/newsletter.html">Subscribe to newsletter</a></li>
+        <li><a href="/accessibility.html">Accessibility statement</a></li>
+      </ul>
+    </aside>
+
+    <!-- FAQ to add structured, crawlable content that answers common questions -->
+    <section aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+      <dl> <!-- Definition list pairs questions and answers semantically -->
+        <dt>Who can participate?</dt>
+        <dd>All community members, especially youth, women, and marginalized groups, are welcome to engage in our programs.</dd>
+
+        <dt>Is there a cost?</dt>
+        <dd>Most of our core services are offered free of charge; some specialized workshops may have nominal fees with waivers available.</dd>
+
+        <dt>How do you measure impact?</dt>
+        <dd>We use a combination of surveys, focus groups, and performance indicators to assess progress and adapt accordingly.</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer role="contentinfo"> <!-- Footer section with contact, legal, and secondary navigation -->
+    <section aria-label="Contact information">
+      <h2>Contact Us</h2>
+      <address> <!-- Semantic contact details -->
+        <p>123 Pangani Towers<br />
+        Nairobi, Kenya</p>
+        <p>Email: <a href="mailto:shevadanze@hotmail.com">shevadanze@hotmail.com</a><br /> 
+        Phone: <a href="tel:+254710311851">+254 710 311 851</a></p>
+      </address>
+    </section>
+
+    <section aria-label="Legal and social">
+      <p>&copy; 2025 Maendeleo Development Initiative. All rights reserved.</p>
+      <p><a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Use</a></p> <!-- the links are for practice purpose, not yet created -->
+    </section>
+
+    <nav aria-label="Secondary navigation"> <!-- Additional navigational links -->
+      <ul>
+        <li><a href="/sitemap.html">Sitemap</a></li>
+        <li><a href="/help.html">Help</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
